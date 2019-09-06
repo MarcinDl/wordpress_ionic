@@ -6,7 +6,9 @@
 
 <ion-content padding>
   <div text-center *ngIf="count">Found {{ count }} posts</div>
-
+     <ion-buttons slot="start">
+       <ion-back-button>Powrót</ion-back-button>
+     </ion-buttons>
   <ion-card *ngFor="let post of posts">
     <ion-card-header>
       <ion-card-title [innerHTML]="post.title.rendered"></ion-card-title>
